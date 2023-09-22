@@ -1,9 +1,7 @@
 import React from 'react';
 
 const FinalResults = ({ playerScores }) => {
-  // Ordenar los jugadores por puntaje de mayor a menor
-  const sortedPlayers = playerScores ? Object.keys(playerScores).sort((a, b) => playerScores[b] - playerScores[a]) : [];
-
+  const sortedPlayers = playerScores ? Object.keys(playerScores).sort((a, b) => playerScores[b].total - playerScores[a].total) : [];
 
   return (
     <div>
@@ -19,7 +17,7 @@ const FinalResults = ({ playerScores }) => {
           {sortedPlayers.map((player, index) => (
             <tr key={index}>
               <td>{player}</td>
-              <td>{playerScores[player]}</td>
+              <td>{playerScores[player].total}</td>
             </tr>
           ))}
         </tbody>
