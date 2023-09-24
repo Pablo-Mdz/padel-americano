@@ -74,8 +74,8 @@ const PadelApp = () => {
 
     return (
         <div className="font-sans bg-[#1b083c] min-h-screen flex flex-col items-center">
-    <Navbar />
     <div className="container mx-auto py-5 px-4 max-w-4xl">
+    <Navbar />
         <div className="bg-white p-6 rounded-lg shadow-lg text-center">
     <p className="text-red-500">Note: Do not refresh or leave the page as all results will be lost.</p>
     <h2 className="text-xl font-semibold mt-5 mb-3">Add 8 player names one by one here</h2>

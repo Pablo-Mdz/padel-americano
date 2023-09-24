@@ -3,8 +3,8 @@ import Navbar from "./Navbar";
 const About = () => {
     return (
         <div className="bg-[#1b083c]  min-h-screen flex flex-col justify-between">
-            <Navbar />
             <div className="container mx-auto py-5 px-4 max-w-3xl">
+            <Navbar />
                 <div className="bg-white p-6 rounded-lg shadow-lg text-center">
                     <h1 className="text-2xl font-bold mb-5">About</h1>
                     <p className="text-lg mb-2">Welcome to the American Padel Matches Organizer!</p>
