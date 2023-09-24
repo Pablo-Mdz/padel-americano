@@ -10,8 +10,6 @@ const MatchOrganizer = ({ players , setMatches, matches}) => {
         
         for (let i = 0; i < 7; i++) {
             let match1, match2;
-            
-            // Hacer que el "jugador fijo" juegue 3 partidos en la pista 1 y 4 en la pista 2
             if ([0, 1, 2].includes(i)) {
                 match1 = [fixedPlayer, rotatingPlayers[i], rotatingPlayers[(i + 1) % 7], rotatingPlayers[(i + 2) % 7]];
                 match2 = [rotatingPlayers[(i + 3) % 7], rotatingPlayers[(i + 4) % 7], rotatingPlayers[(i + 5) % 7], rotatingPlayers[(i + 6) % 7]];
@@ -19,7 +17,6 @@ const MatchOrganizer = ({ players , setMatches, matches}) => {
                 match2 = [fixedPlayer, rotatingPlayers[i], rotatingPlayers[(i + 1) % 7], rotatingPlayers[(i + 2) % 7]];
                 match1 = [rotatingPlayers[(i + 3) % 7], rotatingPlayers[(i + 4) % 7], rotatingPlayers[(i + 5) % 7], rotatingPlayers[(i + 6) % 7]];
             }
-            
             organizedMatches.push([match1, match2]);
         }
         

@@ -1,0 +1,22 @@
+/* Estilo para los botones de navegación */
+.nav-button {
+    background-color: transparent;
+    border: none;
+    color: #333; /* Color de texto más discreto */
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para los botones cuando se les pasa el ratón por encima */
+  .nav-button:hover {
+    color: #007bff; /* Color de resaltado al pasar el ratón */
+  }
+  
+  /* Estilo para los botones activos (cuando estás en la página actual) */
+  .nav-button.active {
+    font-weight: bold;
+  }
+  
