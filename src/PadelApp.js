@@ -73,7 +73,7 @@ const PadelApp = () => {
     const sortedPlayerScores = Object.entries(playerScores).sort((a, b) => b[1].total - a[1].total);
 
     return (
-        <div className="font-sans bg-[#1b083c] min-h-screen flex flex-col items-center">
+        <div className="font-sans bg-[#1b083c] min-h-screen flex flex-col justify-between">
             <div className="container mx-auto py-5 px-4 max-w-4xl">
                 <Navbar />
                 <div className="bg-white p-6 rounded-lg shadow-lg text-center">
