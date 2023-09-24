@@ -5,10 +5,10 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const navItemClasses =
-    'text-lg mx-2 cursor-pointer transition duration-300 hover:text-blue-700';
+    'text-lg mx-2 text-white cursor-pointer transition duration-300 hover:text-green-500';
 
   return (
-    <div className="font-sans bg-gray-300 p-2 ">
+    <div className="font-sans  p-2 ">
     <nav className="flex justify-center mb-5">
       <span
         className={navItemClasses}
