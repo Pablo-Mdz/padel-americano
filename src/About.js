@@ -4,7 +4,7 @@ const About = () => {
     return (
         <div className="bg-[#1b083c]  min-h-screen flex flex-col justify-between">
             <div className="container mx-auto py-5 px-4 max-w-3xl">
-            <Navbar />
+                <Navbar />
                 <div className="bg-white p-6 rounded-lg shadow-lg text-center">
                     <h1 className="text-2xl font-bold mb-5">About</h1>
                     <p className="text-lg mb-2">Welcome to the American Padel Matches Organizer!</p>
@@ -18,10 +18,11 @@ const About = () => {
                     <p className="text-sm mb-4">Feel free to use, share, or contribute to this project. Happy playing!</p>
                 </div>
             </div>
-            <footer className="mt-5 flex justify-center">
-                <a href="https://github.com/Pablo-Mdz/padel-americano" target="_blank" rel="noopener noreferrer" className="flex items-center">
+            <footer className="mt-5 flex justify-center mb-4">
+                <a href="https://github.com/Pablo-Mdz/padel-americano" target="_blank" rel="noopener noreferrer" className="flex items-center text-white">
                     GitHub Repository
-                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" className="w-6 h-6 inline ml-2" />
+                    <img src={process.env.PUBLIC_URL + '/gitLogo.gif'} alt="Logo" className="w-6 h-6 inline ml-2 mb-2" />
+
                 </a>
             </footer>
         </div>

@@ -27,10 +27,11 @@ const Rules = () => {
                     <p className="text-red-500 mt-5">Important Note: Do not refresh the page as all entered data and scores will be lost!</p>
                 </div>
             </div>
-            <footer className="mt-5 flex justify-center">
-                <a href="https://github.com/Pablo-Mdz/padel-americano" target="_blank" rel="noopener noreferrer" className="flex items-center">
+            <footer className="mt-5 flex justify-center mb-4">
+                <a href="https://github.com/Pablo-Mdz/padel-americano" target="_blank" rel="noopener noreferrer" className="flex items-center text-white">
                     GitHub Repository
-                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" className="w-6 h-6 inline ml-2" />
+                    <img src={process.env.PUBLIC_URL + '/gitLogo.gif'} alt="Logo" className="w-6 h-6 inline ml-2 mb-2" />
+
                 </a>
             </footer>
         </div>
