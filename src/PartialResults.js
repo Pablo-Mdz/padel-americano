@@ -1,5 +1,3 @@
-import React from 'react';
-
 const PartialResults = ({ playerScores, currentMatchIndex }) => {
     const playerNames = Object.keys(playerScores);
 
@@ -22,17 +20,11 @@ const PartialResults = ({ playerScores, currentMatchIndex }) => {
                             <td>{playerName}</td>
                             {Array.from({ length: currentMatchIndex + 1 }, (_, i) => (
                                 <td key={i}>
-                                   {playerScores && playerScores[playerName] && playerScores[playerName].total ? playerScores[playerName].total : 0}
-
-                                    {/* {playerScores[playerName] && playerScores[playerName][`partido${i + 1}`]
-                                        ? playerScores[playerName][`partido${i + 1}`]?.total || 0
-                                        : 0} */}
+                                   {playerScores[playerName]?.matches?.[i] || 0}
                                 </td>
                             ))}
                             <td>
-                                {playerScores[playerName] && playerScores[playerName].total
-                                    ? playerScores[playerName].total
-                                    : 0}
+                                {playerScores[playerName]?.total || 0}
                             </td>
                         </tr>
                     ))}
@@ -41,6 +33,7 @@ const PartialResults = ({ playerScores, currentMatchIndex }) => {
         </div>
     );
 };
+
 
 export default PartialResults;
 

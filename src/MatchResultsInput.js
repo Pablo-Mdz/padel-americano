@@ -41,7 +41,7 @@ const MatchResultsInput = ({ organizedMatches, playerScores, updatePlayerScores 
                         placeholder="Puntos"
                         onChange={(e) => handleInputChange(matchIndex, 'team1', e)}
                     />
-                    <span>vs</span>
+                    <span> vs </span>
                     <span>{match[1][0]} y {match[1][1]}</span>
                     <input
                         type="number"

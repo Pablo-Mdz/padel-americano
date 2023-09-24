@@ -2,11 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const MatchOrganizer = ({ players , setMatches, matches}) => {
   
-
   useEffect(() => {
-     // eslint-disable-next-line
-   
-    
     const organizeMatches = () => {
         let organizedMatches = [];
         let fixedPlayer = players[0];
